@@ -1,0 +1,157 @@
+/* RAG Cortex Dark Theme */
+
+/* Force dark background */
+.stApp {
+    background-color: #191919;
+}
+
+/* Hide Streamlit branding */
+#MainMenu, footer, header {visibility: hidden;}
+
+/* Hide sidebar collapse button */
+button[kind="header"] {display: none !important;}
+[data-testid="collapsedControl"] {display: none !important;}
+[data-testid="stSidebarCollapseButton"] {display: none !important;}
+.stSidebar button[aria-label="Close sidebar"] {display: none !important;}
+.stSidebar button[aria-label="Collapse sidebar"] {display: none !important;}
+[data-testid="baseButton-headerNoPadding"] {display: none !important;}
+
+/* Force sidebar always visible */
+section[data-testid="stSidebar"] {
+    width: 300px !important;
+    min-width: 300px !important;
+    transform: none !important;
+    position: relative !important;
+}
+section[data-testid="stSidebar"] > div {
+    width: 300px !important;
+}
+
+/* Main container */
+.block-container {
+    max-width: 800px;
+    padding: 2rem 1rem;
+}
+
+/* Typography */
+h1, h2, h3, p, span, label, .stMarkdown {
+    color: #E0E0E0 !important;
+}
+
+/* Muted text */
+.muted {
+    color: #888 !important;
+    font-size: 0.9rem;
+}
+
+/* Input fields */
+.stTextInput > div > div > input {
+    background-color: #252525;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: #E0E0E0;
+    padding: 12px;
+}
+.stTextInput > div > div > input:focus {
+    border-color: #5C7CFA;
+    box-shadow: none;
+}
+.stTextInput > div > div > input::placeholder {
+    color: #666;
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #252525;
+    color: #E0E0E0;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s;
+}
+.stButton > button:hover {
+    background-color: #333;
+    border-color: #444;
+}
+.stButton > button[kind="primary"] {
+    background-color: #5C7CFA;
+    border-color: #5C7CFA;
+}
+.stButton > button[kind="primary"]:hover {
+    background-color: #4C6EF5;
+}
+
+/* File uploader */
+.stFileUploader {
+    background-color: #252525;
+    border: 1px dashed #444;
+    border-radius: 8px;
+}
+.stFileUploader label {
+    color: #888 !important;
+}
+
+/* Expander */
+.streamlit-expanderHeader {
+    background-color: #252525;
+    border-radius: 6px;
+    color: #E0E0E0 !important;
+}
+.streamlit-expanderContent {
+    background-color: #1E1E1E;
+    border: 1px solid #333;
+}
+
+/* Status indicators */
+.status-active {
+    color: #40C057 !important;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: rgba(64, 192, 87, 0.15);
+    padding: 8px 12px;
+    border-radius: 6px;
+    border-left: 3px solid #40C057;
+}
+.status-inactive {
+    color: #888 !important;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+}
+.status-processing {
+    color: #FAB005 !important;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: rgba(250, 176, 5, 0.15);
+    padding: 8px 12px;
+    border-radius: 6px;
+    border-left: 3px solid #FAB005;
+}
+
+/* Response card */
+.response-box {
+    background-color: #252525;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin: 1rem 0;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #1E1E1E;
+    border-right: 1px solid #333;
+}
+section[data-testid="stSidebar"] .stMarkdown p {
+    color: #888 !important;
+}
+
+/* Toast/alerts */
+.stAlert {
+    background-color: #252525;
+    border: 1px solid #333;
+}
+
+/* Spinner */
+.stSpinner > div {
+    border-color: #5C7CFA transparent transparent transparent;
+}
