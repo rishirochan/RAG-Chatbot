@@ -143,4 +143,4 @@ PyMuPDF sometimes fails to extract styled text (bold, italic, hyperlinks, colore
 
 ## 🏗️ Architecture
 
-[View RAG Architecture (PDF)](./RAG-architecture.pdf)
+<img width="1014" height="813" alt="Screenshot 2025-12-28 at 12 44 30 AM" src="https://github.com/user-attachments/assets/49860084-9aca-409d-a8ce-e7dbf392cd37" />
