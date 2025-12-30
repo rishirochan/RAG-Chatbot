@@ -4,12 +4,12 @@ import sys
 import rag_core
 
 # Load CSS from external file
-with open("styles.css") as f:
+with open(os.path.join(os.path.dirname(__file__), "styles.css")) as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Page Config
 st.set_page_config(
-    page_title="RAG Cortex",
+    page_title="🛠️ DocVaultAI",
     page_icon="📄",
     layout="centered",
     initial_sidebar_state="expanded"
@@ -146,7 +146,7 @@ with st.sidebar:
         st.rerun()
 
 # Main: Chat Interface
-st.markdown("# 🧠 RAG Cortex")
+st.markdown("# 🛠️ DocVaultAI")
 st.markdown('<p class="muted">Ask questions about your documents</p>', unsafe_allow_html=True)
 
 # Input

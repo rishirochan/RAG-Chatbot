@@ -1,9 +1,25 @@
-# 🧠 RAG Cortex
+# 🛠️ DocVaultAI
 
-A powerful Retrieval-Augmented Generation (RAG) chatbot that lets you chat with your PDF documents. Built with **Streamlit**, **LangChain**, **Groq**, and **ChromaDB**.
+A privacy-centric document intelligence platform designed for secure, local semantic analysis. By leveraging locally saved documents and embeddings, it ensures sensitive data remains secure while delivering powerful Retrieval-Augmented Generation (RAG) capabilities. Built with **Streamlit**, **LangChain**, **Groq**, and **ChromaDB**.
+
+## 🛡️ Functional Service Architecture
+
+We position this not just as an interface, but as a secure **Data Pipeline** distinguishing it from standard conversational interfaces by offering professional-grade data sovereignty.
+
+### 🔒 Air-Gapped Embedding Engine
+The semantic meaning of your documents never leaves your machine. Vectors are generated locally using **Ollama/FastEmbed**, ensuring no third party or cloud provider ever reads, processes, or stores your original files or their semantic representations.
+
+### ☁️ Hybrid-Cloud Architecture
+**Local Privacy with Global Intelligence.** Heavy reasoning and language generation are offloaded to **Groq's** high-speed inference engine, but the sensitive context selection and retrieval happen entirely on-premise. Your full document set is never exposed to the cloud—only the specific, anonymized snippets relevant to a query.
+
+### 📜 Audit-Ready Citations
+Designed for verification-heavy fields like legal or medical research. Every response provides a transparent **Provenance Log**, linking assertions directly to source PDF pages with precise "confidence scores," verifying the reliability of the information.
+
+### 🚫 Zero-Retention Guarantee
+Data sent to the Groq API is strictly for **"Inference Only"**. As a self-hosted solution, its guaranteed that your query context is never stored, trained on, or retained, offering a level of privacy unattainable with public SaaS models like ChatGPT.
 
 ## ✨ Features
-- **Chat with PDFs** — Ask questions and get accurate answers based on your documents
+- **Query Your Documents** — Ask questions and get accurate answers based on your documents
 - **Dark Notion-style UI** — Clean, minimal dark theme interface
 - **Document Management** — Add and delete documents from the sidebar
 - **Duplicate Detection** — Warns before re-uploading files already indexed
@@ -27,7 +43,7 @@ A powerful Retrieval-Augmented Generation (RAG) chatbot that lets you chat with 
 
 ## 📁 Project Structure
 ```
-RAG-Chatbot/
+DocVaultAI/
 ├── src/
 │   ├── app.py          # Streamlit UI
 │   ├── rag_core.py     # RAG logic

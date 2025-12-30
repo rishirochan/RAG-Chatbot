@@ -1,9 +1,9 @@
 [project]
-name = "test"
+name = "DocVaultAI"
 version = "0.1.0"
-description = "Add your description here"
+description = "A powerful privacy-firstRAG Model that lets you learn from your PDF documents, built with Streamlit, LangChain, Groq, and ChromaDB."
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
     "chromadb>=0.4.0",
     "faiss-cpu>=1.7.4",
